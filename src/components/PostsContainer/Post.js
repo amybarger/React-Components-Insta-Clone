@@ -1,8 +1,8 @@
 // You will add code in this file
-import React from "react";
 import CommentSection from "../CommentSection/CommentSectionContainer";
 import LikeSection from "./LikeSection";
 import PostHeader from "./PostHeader";
+import React from "react";
 
 import "./Posts.css";
 
@@ -25,7 +25,9 @@ const Post = props => {
           src={props.post.imageUrl}
         />
       </div>
-      <LikeSection />
+      {/* <LikeSection () => newLikes(likes + 1) */}
+      {/* /> */}
+
       <CommentSection
         postId={props.post.imageUrl}
         comments={props.post.comments}
