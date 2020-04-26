@@ -4,6 +4,10 @@
 import React from "react";
 
 const LikeSection = props => {
+  console.log(props);
+
+  const [likes, setLikes] = useState(0);
+
   return (
     <div>
     <div
