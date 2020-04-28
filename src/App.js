@@ -8,6 +8,7 @@ import React from "react";
 import "./App.css";
 // import the PostsPage and SearchBar and add them to the App
 import SearchBar from "./components/SearchBar/SearchBarContainer";
+import LikeSection from "./components/PostsContainer/LikeSection"
 
 
 const App = () => {
