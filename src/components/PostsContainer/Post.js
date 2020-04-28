@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import CommentSection from "../CommentSection/CommentSectionContainer";
 import LikeSection from "./LikeSection";
 import PostHeader from "./PostHeader";
-import dummyData from "../../dummy-data"
+// import dummyData from "../../dummy-data"
 
 
 import "./Posts.css";
@@ -12,8 +12,8 @@ import "./Posts.css";
 const Post = props => {
   // set up state for the likes
 
-  const [like, setLikes] = useState(0);
-console.log("post props", props);
+//   const [like, setLikes] = useState(0);
+// console.log("post props", props);
 
   return (
     <div className="post-border">
@@ -31,7 +31,10 @@ console.log("post props", props);
         />
       </div>
       <div className="like-section">
-      <LikeSection />
+      <LikeSection 
+       likes={props.likes}
+      />
+     
       </div>
       
       <CommentSection

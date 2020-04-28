@@ -8,7 +8,7 @@ const LikeSection = props => {
   
   console.log("Like section props", props);
 
-  const [likeIcon, setLikeIcon] = useState(dummyData);
+  const [likes, setLike] = useState(dummyData);
 
   return (
     <div>
@@ -24,9 +24,11 @@ const LikeSection = props => {
       </div>
     </div>
     <p className="like-number">
-      <button onClick={props.likes}>
-      likes
-      </button>
+      {likes.map(
+        props => {
+          return (props.likes)
+        }
+      )}
       </p>
 </div>
   )
