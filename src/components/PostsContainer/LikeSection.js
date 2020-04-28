@@ -4,6 +4,7 @@
 import React from "react";
 
 const LikeSection = props => {
+  console.log("Like section props", props);
   return (
     <div>
     <div

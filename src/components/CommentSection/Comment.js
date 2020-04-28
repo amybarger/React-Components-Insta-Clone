@@ -4,11 +4,12 @@ import React from 'react';
 import './Comment.css';
 
 const Comment = props => {
+  console.log("Props for individual comments", props);
   return (
     <div className="comment-text">
-      <span className="user">{props.comment.username}</span>
+      <span className="user">{props.username}</span>
       {' '}
-      <span className="comment">{props.comment.text}</span>
+      <span className="comment">{props.text}</span>
     </div>
   );
 };
