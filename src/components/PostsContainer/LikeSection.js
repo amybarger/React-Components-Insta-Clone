@@ -1,10 +1,15 @@
 // look at the likes on this component. Right now it is hard coded on line 20.
 // console.log your props and see how to add likes to this component so that it will update when you click the icon.
 // HINT: You will need to add an onClick event pass through your props and update the hard coded Likes
-import React from "react";
+import React, { useState } from "react";
+import dummyData from "../../dummy-data"
 
 const LikeSection = props => {
+  
   console.log("Like section props", props);
+
+  const [likeIcon, setLikeIcon] = useState(dummyData);
+
   return (
     <div>
     <div
@@ -19,8 +24,10 @@ const LikeSection = props => {
       </div>
     </div>
     <p className="like-number">
-      
-      likes</p>
+      <button onClick={props.likes}>
+      likes
+      </button>
+      </p>
 </div>
   )
 };
